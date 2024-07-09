@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <header></header>    
+    <main class="interaccion">
+
+        <section class="interaccion__usuario">
+            <h1 class="interaccion__usuario__titulo">Ingrese el texto aqui</h1>
+            <p >Solo minusculas, sin acentos, números o caracteres</p>
+            <textarea type="text" id="inputText" rows="10" cols="50"></textarea>
+
+            
+        <div class="interaccion__boton">        
+            <button onclick="textoDeUsuario();" class="interaccion__boton__encriptar">Encriptar</button>
+            <button onclick="textoGenerado();" class="interaccion__boton__desencriptar" id="resolver">Desencriptar</button>
+            
+        </div>
+
+               
+        <textarea id="outputText" rows="10" cols="50" readonly placeholder="Respuesta aparecerá aquí..."></textarea>
+        <button onclick="textoCopiado();" class="interaccion__boton__copiar" id="copiarTexto" >Copiar</button>    
+     </section>
+        <img src="imagen/Muñeco.png" alt="">
+        
+        <style class="property"></style>
+    </main>
+   
+
+    <footer class="footer">
+        <p>Desarrollado por Omar Moreno. Año 2024</p>
+    </footer>
+     
+    <script src="app.js" ></script>
+</body>
+</html>
